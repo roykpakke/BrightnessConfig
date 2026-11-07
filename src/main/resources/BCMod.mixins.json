@@ -1,0 +1,11 @@
+{
+  "client" : [],
+  "required": true,
+  "package": "com.roykpakke.${id}.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "minVersion": "0.8",
+  "refmap": "${id}.refmap.json",
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

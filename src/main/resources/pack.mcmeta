@@ -1,0 +1,6 @@
+{
+	"pack": {
+		"description": "Lock brightness at set value through a config file",
+		"pack_format": 3
+	}
+}
