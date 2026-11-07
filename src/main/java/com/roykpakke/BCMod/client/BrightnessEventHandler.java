@@ -33,7 +33,6 @@ public class BrightnessEventHandler {
         }
         float gamma = brightnessToGamma(ConfigHandler.BRIGHTNESS);
         mc.gameSettings.gammaSetting = gamma;
-        BCMod.LOGGER.info("Brightness applied from config: config=" + ConfigHandler.BRIGHTNESS + ", gamma=" + gamma);
     }
 
     @SubscribeEvent
