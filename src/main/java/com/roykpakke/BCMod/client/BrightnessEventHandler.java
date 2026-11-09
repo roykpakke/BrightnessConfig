@@ -56,7 +56,6 @@ public class BrightnessEventHandler {
 
         applyBrightness();
         initApplied = true;
-        BCMod.LOGGER.info("Brightness applied from config: " + ConfigHandler.BRIGHTNESS + "%");
     }
 
     @SubscribeEvent
