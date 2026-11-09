@@ -28,13 +28,15 @@ public class BCMod {
 	public static BCMod instance;
 	
 	@Mod.EventHandler
-	public void preInit(FMLPreInitializationEvent event) {RegistryHandler.preInitRegistries(event);
+	public void preInit(FMLPreInitializationEvent event) {
+		RegistryHandler.preInitRegistries(event);
 	}
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
 		MinecraftForge.EVENT_BUS.register(new BrightnessEventHandler());
 	}
 	@Mod.EventHandler
-	public void postInit(FMLPostInitializationEvent event) {LOGGER.info("Post-initializing");
+	public void postInit(FMLPostInitializationEvent event) {
+		LOGGER.info("Brightness applied from config: " + ConfigHandler.BRIGHTNESS + "%");
 	}
 }
